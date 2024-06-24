@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthcare Appointment System</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Healthcare Appointment System</h1>
+    </header>
+    <main>
+      <form class="form">
+        <h2>Search for Doctors</h2>
+        <form id="search">
+          <label for="specialty">Specialty:</label>
+          <input type="text" id="specialty" name="specialty" required />
+
+          <label for="location">Location:</label>
+          <input type="text" id="location" name="location" required />
+          <br />
+          <button type="submit">Search</button>
+        </form>
+      </form>
+      <section class="results-section" id="resultsSection">
+        <h2>Search Results</h2>
+        <div id="resultsContainer"></div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

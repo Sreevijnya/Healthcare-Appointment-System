@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointment Booking</title>
+    <link rel="stylesheet" href="booking.css" />
+  </head>
+  <body>
+    <h1>Appointment Booking</h1>
+    <form id="bookingForm">
+      <label for="doctor">Doctor:</label>
+      <input type="text" id="doctor" name="doctor" required readonly />
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time" required />
+
+      <button type="submit">Book Appointment</button>
+    </form>
+
+    <div id="availability"></div>
+
+    <script src="booking.js"></script>
+  </body>
+</html>
